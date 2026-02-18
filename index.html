@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="tr-MK" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>SIRAÇ Restaurant & Steakhouse | Tetovo, North Macedonia</title>
+  <meta name="description" content="SIRAÇ Restaurant & Steakhouse — Tetovo (Kuzey Makedonya) premium tatlı ve steakhouse deneyimi. Künefe, Katmer, Baklava seçenekleri. Adres: 2X7R+284, 159, Tetovo 1200. Tel: 075 222 267" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://sirac.mk/" />
+
+  <!-- Geo / Local hints -->
+  <meta name="geo.region" content="MK" />
+  <meta name="geo.placename" content="Tetovo" />
+  <meta name="ICBM" content="42.0063, 20.9743" />
+
+  <!-- Favicon (recommended: replace with real file later) -->
+  <link rel="icon" href="assets/icons/favicon.jpg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sirac.mk/" />
+  <meta property="og:title" content="SIRAÇ Restaurant & Steakhouse | Tetovo" />
+  <meta property="og:description" content="Tetovo’da premium tatlı ve steakhouse deneyimi. Künefe, Katmer, Baklava. Rezervasyon & bilgi: 075 222 267" />
+  <meta property="og:image" content="https://sirac.mk/assets/img/og/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="tr_MK" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SIRAÇ Restaurant & Steakhouse | Tetovo" />
+  <meta name="twitter:description" content="Tetovo’da premium tatlı ve steakhouse deneyimi. Rezervasyon & bilgi: 075 222 267" />
+  <meta name="twitter:image" content="https://sirac.mk/assets/img/og/og.jpg" />
+
+  <!-- Performance -->
+  <link rel="preload" as="image" href="assets/img/hero/hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Structured Data (consistent, MK-focused) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Restaurant","LocalBusiness"],
+    "name": "SIRAÇ Restaurant & Steakhouse",
+    "url": "https://sirac.mk/",
+    "image": "https://sirac.mk/assets/img/og/og.jpg",
+    "telephone": "+38975222267",
+    "priceRange": "€€€",
+    "servesCuisine": ["Steakhouse","Turkish","Dessert","Balkan"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2X7R+284, 159",
+      "addressLocality": "Tetovo",
+      "postalCode": "1200",
+      "addressCountry": "MK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.0063,
+      "longitude": 20.9743
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Tetovo"
+    },
+    "currenciesAccepted": "MKD, EUR",
+    "paymentAccepted": "Cash, Credit Card",
+    "sameAs": [
+      "https://instagram.com/siracrestaurant"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --burgundy:#6B1D2F;
+      --burgundy-light:#8B2D42;
+      --gold:#C5A059;
+      --gold-light:#D4B76A;
+      --cream:#FAF8F3;
+      --cream-dark:#F0EBE3;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',sans-serif;
+      background-color:var(--cream);
+      color:#1a1a1a;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    .font-serif{font-family:'Playfair Display',serif}
+    .text-burgundy{color:var(--burgundy)}
+    .text-gold{color:var(--gold)}
+    .bg-burgundy{background-color:var(--burgundy)}
+    .bg-burgundy-light{background-color:var(--burgundy-light)}
+    .bg-gold{background-color:var(--gold)}
+    .bg-cream{background-color:var(--cream)}
+    .border-gold{border-color:var(--gold)}
+
+    .hero-section{
+      position:relative;
+      height:100vh;
+      min-height:700px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .hero-bg{
+      position:absolute;
+      inset:0;
+      background-image:
+        linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(107,29,47,0.75)),
+        url('assets/img/hero/hero.jpg');
+      background-size:cover;
+      background-position:center;
+      will-change:transform;
+      transform:translateZ(0);
+    }
+    .hero-content{
+      position:relative;
+      z-index:10;
+      text-align:center;
+      padding:0 1.5rem;
+      max-width:900px;
+      animation:fadeUp 0.9s ease-out both;
+    }
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(24px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    .btn-primary{
+      background-color:var(--gold);
+      color:var(--burgundy);
+      padding:1rem 2.5rem;
+      border-radius:999px;
+      font-weight:500;
+      letter-spacing:.05em;
+      transition:transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      justify-content:center;
+    }
+    .btn-primary:hover{
+      background-color:var(--gold-light);
+      transform:translateY(-2px);
+      box-shadow:0 10px 30px rgba(197,160,89,.30);
+    }
+    .btn-outline{
+      border:1px solid rgba(255,255,255,.85);
+      color:white;
+      padding:1rem 2.5rem;
+      border-radius:999px;
+      font-weight:500;
+      letter-spacing:.05em;
+      transition:all .25s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      background:transparent;
+      justify-content:center;
+    }
+    .btn-outline:hover{background:white;color:var(--burgundy)}
+    .section-title{font-size:2.5rem;font-weight:500;letter-spacing:-.02em}
+
+    .dessert-card{
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      cursor:pointer;
+      transition:transform .25s ease, box-shadow .25s ease;
+      border:1px solid rgba(0,0,0,.04);
+    }
+    .dessert-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 18px 50px rgba(0,0,0,.10);
+    }
+    .dessert-card .image-wrapper{position:relative;aspect-ratio:4/3;overflow:hidden}
+    .dessert-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+    .dessert-card:hover img{transform:scale(1.03)}
+    .badge-weight{
+      position:absolute;top:1rem;right:1rem;
+      background:rgba(255,255,255,.95);
+      color:var(--burgundy);
+      padding:.25rem .75rem;
+      font-size:.75rem;font-weight:600;
+      border-radius:6px;
+    }
+    .badge-location{
+      position:absolute;top:1rem;left:1rem;
+      background:rgba(107,29,47,.92);
+      color:white;
+      padding:.25rem .75rem;
+      font-size:.65rem;font-weight:600;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+      border-radius:6px;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:1px;
+      background:var(--cream-dark);
+    }
+    @media (max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+    .gallery-item{aspect-ratio:1;overflow:hidden;cursor:pointer;background:var(--burgundy)}
+    .gallery-item img{
+      width:100%;height:100%;
+      object-fit:cover;
+      opacity:.92;
+      transition:opacity .25s ease, transform .5s ease;
+    }
+    .gallery-item:hover img{opacity:1;transform:scale(1.05)}
+
+    .modal, .lightbox{
+      position:fixed; inset:0; z-index:50;
+      display:flex; align-items:center; justify-content:center;
+      padding:1rem;
+      opacity:0; visibility:hidden;
+      transition:opacity .25s ease, visibility .25s ease;
+      background:rgba(0,0,0,.90);
+    }
+    .modal.active, .lightbox.active{opacity:1;visibility:visible}
+    .modal-content{
+      background:white; max-width:640px; width:100%;
+      border-radius:14px; overflow:hidden;
+      transform:scale(.96);
+      transition:transform .25s ease;
+    }
+    .modal.active .modal-content{transform:scale(1)}
+    .modal-image{width:100%;aspect-ratio:16/10;object-fit:cover}
+
+    .lightbox{background:rgba(0,0,0,.94); padding:2rem}
+    .lightbox img{max-width:100%;max-height:85vh;object-fit:contain;border-radius:10px}
+
+    .floating-whatsapp{
+      position:fixed; bottom:2rem; right:2rem;
+      width:56px; height:56px;
+      background:#25D366; border-radius:999px;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 10px 26px rgba(37,211,102,.35);
+      transition:transform .25s ease;
+      z-index:40;
+    }
+    .floating-whatsapp:hover{transform:scale(1.08)}
+
+    .partner-section{
+      background:var(--cream-dark);
+      border-top:1px solid rgba(197,160,89,.20);
+      border-bottom:1px solid rgba(197,160,89,.20);
+    }
+    .partner-logo{
+      width:140px; height:70px;
+      background:white; border-radius:14px;
+      display:flex; align-items:center; justify-content:center;
+      color:#888; font-size:.8rem;
+      border:1px dashed #d6d6d6;
+    }
+
+    .cta-section{background:linear-gradient(to right, var(--burgundy), var(--burgundy-light))}
+    @media (max-width:640px){
+      .section-title{font-size:2rem}
+      .hero-section{min-height:620px}
+    }
+    ::selection{background:var(--gold);color:var(--burgundy)}
+  </style>
+</head>
+
+<body>
+  <!-- HERO -->
+  <header class="hero-section" aria-label="SIRAÇ Restaurant & Steakhouse - Tetovo">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="text-gold text-sm md:text-base tracking-[0.4em] uppercase mb-4 font-medium">
+        Restaurant & Steakhouse • Tetovo
+      </p>
+
+      <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl text-white mb-6 tracking-wide"
+          style="text-shadow:0 6px 28px rgba(0,0,0,.35);">
+        SIRAÇ
+      </h1>
+
+      <p class="text-white/90 text-xl md:text-2xl font-serif italic mb-12 tracking-wide">
+        Tetovo’da premium lezzet ve zarafet
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#tatlilar" class="btn-primary">Tatlıları Keşfet</a>
+        <a href="https://instagram.com/siracrestaurant" target="_blank" rel="noopener noreferrer" class="btn-outline">
+          <i data-lucide="instagram" class="w-5 h-5"></i>
+          Instagram
+        </a>
+      </div>
+
+      <div class="mt-8 text-white/70 text-sm">
+        <span class="inline-flex items-center gap-2">
+          <i data-lucide="map-pin" class="w-4 h-4"></i>
+          2X7R+284, 159, Tetovo 1200
+        </span>
+        <span class="mx-3 opacity-50">•</span>
+        <a class="underline decoration-white/30 hover:decoration-white"
+           href="tel:+38975222267">075 222 267</a>
+      </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 animate-bounce" aria-hidden="true">
+      <i data-lucide="chevron-down" class="w-6 h-6"></i>
+    </div>
+  </header>
+
+  <!-- DESSERTS -->
+  <section id="tatlilar" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-20">
+        <span class="text-gold text-xs tracking-[0.3em] uppercase font-semibold mb-4 block">Premium Seçki</span>
+        <h2 class="font-serif section-title text-burgundy">Özenle Hazırlanan Tatlılar</h2>
+        <div class="w-16 h-px bg-gold mx-auto mt-6"></div>
+        <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+          Tetovo’da SIRAÇ imzasıyla hazırlanan tatlılar — dengeli şerbet, taze malzeme, temiz sunum.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="dessert-card" onclick="openModal('kunefe')" role="button" tabindex="0">
+          <div class="image-wrapper">
+            <img src="assets/img/desserts/kunefe.jpg" alt="SIRAÇ Künefe - Tetovo" loading="lazy" />
+            <span class="badge-location">Kipper</span>
+            <span class="badge-weight">400g</span>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl text-burgundy mb-2">Künefe</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Altın kadayıf, eriyen peynir, dengeli şerbet — net ve zarif.</p>
+          </div>
+        </article>
+
+        <article class="dessert-card" onclick="openModal('katmer')" role="button" tabindex="0">
+          <div class="image-wrapper">
+            <img src="assets/img/desserts/katmer.jpg" alt="SIRAÇ Katmer - Tetovo" loading="lazy" />
+            <span class="badge-location">Kipper</span>
+            <span class="badge-weight">400g</span>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl text-burgundy mb-2">Katmer</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">El açması hamur, kaymak ve Antep fıstığıyla klasik lezzet.</p>
+          </div>
+        </article>
+
+        <article class="dessert-card" onclick="openModal('baklava-ceviz')" role="button" tabindex="0">
+          <div class="image-wrapper">
+            <img src="assets/img/desserts/baklava-ceviz.jpg" alt="SIRAÇ Cevizli Baklava - Tetovo" loading="lazy" />
+            <span class="badge-location">Kipper</span>
+            <span class="badge-weight">400g</span>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl text-burgundy mb-2">Baklava (Cevizli)</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Kat kat açılan yufka, yoğun ceviz dokusu, temiz bitiş.</p>
+          </div>
+        </article>
+
+        <article class="dessert-card" onclick="openModal('baklava-fistik')" role="button" tabindex="0">
+          <div class="image-wrapper">
+            <img src="assets/img/desserts/baklava-fistik.jpg" alt="SIRAÇ Fıstıklı Baklava - Tetovo" loading="lazy" />
+            <span class="badge-location">Kipper</span>
+            <span class="badge-weight">400g</span>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl text-burgundy mb-2">Baklava (Fıstıklı)</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Fıstığın aroması ön planda; şerbeti dengeli, dokusu çıtır.</p>
+          </div>
+        </article>
+
+        <article class="dessert-card md:col-span-2 lg:col-span-1" onclick="openModal('soguk-baklava')" role="button" tabindex="0">
+          <div class="image-wrapper">
+            <img src="assets/img/desserts/soguk-baklava.jpg" alt="SIRAÇ Soğuk Baklava - Tetovo" loading="lazy" />
+            <span class="badge-location">Kipper</span>
+            <span class="badge-weight">400g</span>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-serif text-2xl text-burgundy mb-2">Soğuk Baklava</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Süt şerbetiyle ferah dokunuş; modern, hafif ve şık.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNER (ONLY KIPPER) -->
+  <section class="partner-section py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-gold text-xs tracking-[0.3em] uppercase font-semibold mb-8">Ayrıca Hizmetinizde</p>
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+
+        <div class="partner-logo">
+         <img src="assets/img/kipper.jpg" alt="Kipper Logo" class="h-10 w-auto" loading="lazy">
+        </div>
+
+        <div class="text-center md:text-left">
+          <h3 class="font-serif text-xl text-burgundy mb-2">Kipper</h3>
+          <p class="text-gray-600 text-sm">
+            SIRAÇ tatlı seçkisini Kipper’da da deneyimleyebilirsiniz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galeri" class="bg-burgundy">
+    <div class="py-16 text-center px-6">
+      <span class="text-gold text-xs tracking-[0.3em] uppercase font-semibold mb-4 block">Görsel Hikaye</span>
+      <h2 class="font-serif text-3xl md:text-4xl text-white">Galeri</h2>
+      <p class="mt-4 text-white/70 text-sm">Görselleri /assets/img/gallery/ klasörüne ekleyin.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" onclick="openLightbox(0)"><img src="assets/img/gallery/01.jpg" alt="SIRAÇ Galeri 1 - Tetovo" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLightbox(1)"><img src="assets/img/gallery/02.jpg" alt="SIRAÇ Galeri 2 - Tetovo" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLightbox(2)"><img src="assets/img/gallery/03.jpg" alt="SIRAÇ Galeri 3 - Tetovo" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLightbox(3)"><img src="assets/img/gallery/04.jpg" alt="SIRAÇ Galeri 4 - Tetovo" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLightbox(4)"><img src="assets/img/gallery/05.jpg" alt="SIRAÇ Galeri 5 - Tetovo" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLightbox(5)"><img src="assets/img/gallery/06.jpg" alt="SIRAÇ Galeri 6 - Tetovo" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLightbox(6)"><img src="assets/img/gallery/07.jpg" alt="SIRAÇ Galeri 7 - Tetovo" loading="lazy" /></div>
+      <div class="gallery-item" onclick="openLightbox(7)"><img src="assets/img/gallery/08.jpg" alt="SIRAÇ Galeri 8 - Tetovo" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="hakkimizda" class="py-24 md:py-32 bg-cream px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <svg class="w-10 h-10 text-gold mx-auto mb-8 opacity-60" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-3.432.933-6.995 3.215-6.995 7.182H24v7.391h-9.983zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-3.433.933-6.996 3.215-6.996 7.182h9.983v7.391H0z"/>
+      </svg>
+
+      <p class="font-serif text-xl md:text-2xl text-burgundy leading-relaxed mb-8">
+        Tetovo’nun kalbinde; geleneğin zarafetle birleştiği bir deneyim: SIRAÇ.
+      </p>
+
+      <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+        Ustalık, denge ve kalite. Her detay “premium” hissettirecek şekilde tasarlanır — tatlıdan sunuma, atmosferden servise.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-serif text-3xl md:text-4xl text-white mb-6">Tetovo’da SIRAÇ Deneyimini Yaşayın</h2>
+      <p class="text-white/80 mb-8 text-lg">Rezervasyon ve bilgi için bize ulaşın.</p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/38975222267?text=Merhaba%2C%20SIRA%C3%87%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          WhatsApp
+        </a>
+        <a href="tel:+38975222267" class="btn-outline border-white text-white hover:bg-white hover:text-burgundy">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+          Hemen Ara
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="iletisim" class="py-24 bg-white px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-gold text-xs tracking-[0.3em] uppercase font-semibold mb-4 block">Bize Ulaşın</span>
+          <h2 class="font-serif text-3xl md:text-4xl text-burgundy mb-8">Ziyaret Edin</h2>
+
+          <div class="space-y-6 mb-10">
+            <div class="flex items-start gap-4">
+              <i data-lucide="map-pin" class="w-5 h-5 text-gold mt-1 flex-shrink-0"></i>
+              <div>
+                <p class="font-medium text-burgundy mb-1">Adres</p>
+                <p class="text-gray-600 text-sm">
+                  2X7R+284, 159, Tetovo 1200<br />
+                  Kuzey Makedonya
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <i data-lucide="clock" class="w-5 h-5 text-gold mt-1 flex-shrink-0"></i>
+              <div>
+                <p class="font-medium text-burgundy mb-1">Çalışma Saatleri</p>
+                <p class="text-gray-600 text-sm">Her gün: 10:00 - 23:00</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <i data-lucide="phone" class="w-5 h-5 text-gold mt-1 flex-shrink-0"></i>
+              <div>
+                <p class="font-medium text-burgundy mb-1">Telefon</p>
+                <p class="text-gray-600 text-sm">
+                  <a href="tel:+38975222267" class="underline decoration-gray-300 hover:decoration-gray-500">
+                    075 222 267
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-3">
+            <a href="https://instagram.com/siracrestaurant" target="_blank" rel="noopener noreferrer"
+               class="w-12 h-12 rounded-full bg-burgundy text-white flex items-center justify-center hover:bg-burgundy-light transition-colors" aria-label="Instagram">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="h-80 md:h-96 rounded overflow-hidden shadow-lg">
+          <!-- NOTE: embed is placeholder; replace pb with exact SIRAÇ place embed later -->
+          <iframe
+            src="https://www.google.com/maps?q=2X7R%2B284%2C%20159%2C%20Tetovo%201200&output=embed"
+            width="100%" height="100%"
+            style="border:0; filter: grayscale(100%) contrast(1.1);"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="SIRAÇ Lokasyon - Tetovo">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-burgundy text-white/80 py-12 px-6 border-t border-white/10">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <h3 class="font-serif text-2xl text-white mb-1">SIRAÇ</h3>
+        <p class="text-xs tracking-widest uppercase">Restaurant & Steakhouse • Tetovo</p>
+      </div>
+      <p class="text-xs opacity-60">&copy; <span id="year"></span> SIRAÇ. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/38975222267?text=Merhaba%2C%20SIRA%C3%87%20i%C3%A7in%20bilgi%20almak%20istiyorum."
+     target="_blank" rel="noopener noreferrer"
+     class="floating-whatsapp" aria-label="WhatsApp ile iletişim">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+  </a>
+
+  <!-- Dessert Modal -->
+  <div id="dessertModal" class="modal" onclick="closeModal(event)" aria-hidden="true">
+    <div class="modal-content" onclick="event.stopPropagation()" role="dialog" aria-modal="true" aria-label="Tatlı detay">
+      <div class="relative">
+        <img id="modalImage" src="" alt="" class="modal-image" />
+        <button onclick="closeModal()" class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors" aria-label="Kapat">
+          <i data-lucide="x" class="w-5 h-5 text-burgundy"></i>
+        </button>
+      </div>
+
+      <div class="p-8">
+        <div class="flex items-center justify-between mb-4">
+          <h3 id="modalTitle" class="font-serif text-3xl text-burgundy"></h3>
+          <span class="bg-gold/20 text-burgundy px-3 py-1 rounded text-sm font-semibold">400g</span>
+        </div>
+        <p id="modalDesc" class="text-gray-600 mb-6 leading-relaxed"></p>
+
+        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+          <span class="text-xs tracking-widest uppercase text-gold font-semibold">Kipper’da da mevcut</span>
+          <a id="modalCta" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm py-3 px-6">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()" aria-hidden="true">
+    <button class="absolute top-6 right-6 text-white hover:text-gold transition-colors" onclick="closeLightbox()" aria-label="Kapat">
+      <i data-lucide="x" class="w-8 h-8"></i>
+    </button>
+    <img id="lightboxImage" src="" alt="Galeri görseli" onclick="event.stopPropagation()" />
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    // Init
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Lucide icons
+    window.addEventListener("DOMContentLoaded", () => {
+      if (window.lucide) lucide.createIcons();
+    });
+
+    // Data
+    const WHATSAPP_LINK = "https://wa.me/38975222267?text=" + encodeURIComponent("Merhaba, SIRAÇ için bilgi almak istiyorum.");
+
+    const desserts = {
+      "kunefe": {
+        title: "Künefe",
+        desc: "Altın kadayıf, eriyen peynir ve dengeli şerbet. Tetovo’da premium bir klasik.",
+        img: "assets/img/desserts/kunefe.jpg"
+      },
+      "katmer": {
+        title: "Katmer",
+        desc: "El açması hamur, kaymak ve fıstıkla geleneksel lezzetin modern sunumu.",
+        img: "assets/img/desserts/katmer.jpg"
+      },
+      "baklava-ceviz": {
+        title: "Baklava (Cevizli)",
+        desc: "Kat kat yufka, yoğun ceviz dokusu ve temiz bitiş — tam kıvamında.",
+        img: "assets/img/desserts/baklava-ceviz.jpg"
+      },
+      "baklava-fistik": {
+        title: "Baklava (Fıstıklı)",
+        desc: "Fıstığın aroması ön planda; çıtır dokulu, şerbeti dengeli premium baklava.",
+        img: "assets/img/desserts/baklava-fistik.jpg"
+      },
+      "soguk-baklava": {
+        title: "Soğuk Baklava",
+        desc: "Süt şerbetiyle ferah, modern ve hafif bir seçenek. Yaz-kış ideal.",
+        img: "assets/img/desserts/soguk-baklava.jpg"
+      }
+    };
+
+    // Modal
+    const modal = document.getElementById("dessertModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDesc = document.getElementById("modalDesc");
+    const modalCta = document.getElementById("modalCta");
+
+    function openModal(key){
+      const item = desserts[key];
+      if(!item) return;
+
+      modalImage.src = item.img;
+      modalImage.alt = item.title + " - SIRAÇ Tetovo";
+      modalTitle.textContent = item.title;
+      modalDesc.textContent = item.desc;
+      modalCta.href = WHATSAPP_LINK;
+
+      modal.classList.add("active");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(e){
+      if(e && e.target && e.target.closest && e.target.closest(".modal-content")) return;
+      modal.classList.remove("active");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    // Lightbox
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const galleryImgs = [
+      "assets/img/gallery/01.jpg",
+      "assets/img/gallery/02.jpg",
+      "assets/img/gallery/03.jpg",
+      "assets/img/gallery/04.jpg",
+      "assets/img/gallery/05.jpg",
+      "assets/img/gallery/06.jpg",
+      "assets/img/gallery/07.jpg",
+      "assets/img/gallery/08.jpg"
+    ];
+
+    function openLightbox(index){
+      const src = galleryImgs[index];
+      if(!src) return;
+      lightboxImage.src = src;
+      lightbox.classList.add("active");
+      lightbox.setAttribute("aria-hidden","false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox(){
+      lightbox.classList.remove("active");
+      lightbox.setAttribute("aria-hidden","true");
+      document.body.style.overflow = "";
+    }
+
+    // Escape to close
+    window.addEventListener("keydown", (e) => {
+      if(e.key === "Escape"){
+        if(modal.classList.contains("active")) closeModal();
+        if(lightbox.classList.contains("active")) closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
